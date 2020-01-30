@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import TeamData from './TeamData';
-
+import NewMember from './components/NewMember';
+import FormComponent from './components/FormComponent';
+import './app.css';
+import './index.css';
 
 
 
@@ -16,7 +19,7 @@ function App() {
       
       <h1>Meet the team</h1>
       <FormComponent addMember={addMember} />
-      <NewMember newPerson={member} />
+      <NewMember newPerson={members} />
     
     </div>
   );

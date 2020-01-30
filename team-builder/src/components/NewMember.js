@@ -5,12 +5,12 @@ function NewMember (props) {
     return (
 
         <div>
-            {props.member.map(item => {
+            {props.newPerson.map(item => {
                 return (
                     <div key={item.id}>
 
-                        <h3>{item.name}</h3>
-                        <p>{item.role}</p>
+                        <h3>{item.Name}</h3>
+                        <p>{item.Role}</p>
                         <p>{item.email}</p>
 
                     </div>
@@ -22,3 +22,5 @@ function NewMember (props) {
     );
 
 };
+
+export default NewMember;
