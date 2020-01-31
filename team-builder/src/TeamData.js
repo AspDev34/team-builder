@@ -3,24 +3,24 @@
 export default [
 
     {
-        Name: 'Daffy Duck',
+        name: 'Daffy Duck',
         id: '123',
         email: 'daffyduck@looneytunes.com',
-        Role: 'Dark Wing Duck'
+        role: 'Dark Wing Duck'
     },
 
     {
-        Name: 'Clark Kent',
+        name: 'Clark Kent',
         id: '456',
         email: 'ckent@dailyplanet.com',
-        Role: 'Reporter'
+        role: 'Reporter'
     },
 
     {
-        Name: 'Bruce Wayne',
+        name: 'Bruce Wayne',
         id: '789',
         email: 'capedcrusader@gotham.com',
-        Role: 'Philanthropist'
+        role: 'Philanthropist'
     }
 
 ]

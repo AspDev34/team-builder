@@ -6,12 +6,15 @@ function FormComponent (props) {
     const [members, setMembers] = useState({name: '', id: '', email: '', role: ''})
 
     const change = event => {
+        console.log('THIS EVENT', event)
+        event.preventDefault();
         setMembers({...members, [event.target.name]: event.target.value});
     }
 
     const newSubmission = event => {
         event.preventDefault();
         props.addMember({...members});
+        console.log(members)
         setMembers({name: '', id: '', email: '', role: ''})
     }
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TeamData from './TeamData';
 import NewMember from './components/NewMember';
 import FormComponent from './components/FormComponent';
+import SearchComponent from './components/SearchComponent';
 import './app.css';
 import './index.css';
 
@@ -20,6 +21,7 @@ function App() {
       <h1>Meet the team</h1>
       <FormComponent addMember={addMember} />
       <NewMember newPerson={members} />
+      <SearchComponent members={members}/>
     
     </div>
   );
